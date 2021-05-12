@@ -49,14 +49,16 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL)
   createEasyCam({ distance: 700 })
 
+  textureWrap(CLAMP)
+
   rubiks = new Rubiks(dim)
 }
 
 function draw() {
   background(200)
-  // rotateX(-0.6)
-  // rotateY(0.6)
-  // rotateZ(0.2)
+  rotateX(-0.6)
+  rotateY(0.6)
+  rotateZ(0.2)
 
   rubiks.show()
 }
