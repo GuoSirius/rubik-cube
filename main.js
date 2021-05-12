@@ -1,4 +1,4 @@
-const dim = 1
+const dim = 3
 const len = 100
 
 const faceImageMap = {
@@ -54,7 +54,7 @@ function setup() {
 
 function draw() {
   background(200)
-  rotateX(-0.6)
+  // rotateX(-0.6)
   // rotateY(0.6)
   // rotateZ(0.2)
 

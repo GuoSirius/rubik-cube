@@ -17,6 +17,7 @@ class Move {
     if (['d', 'r', 'f'].includes(this.side)) dir = -1 * dir;
 
     this.angle -= dir * 0.07;
+    this.angle = 0
 
     if (Math.abs(this.angle) < HALF_PI) return
 
